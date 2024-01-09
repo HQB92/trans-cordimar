@@ -1,0 +1,24 @@
+{
+  "name": "trans-cordimar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "trans-cordimar",
+  "author": "Hugo Esteban Quinteros Bustos",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^5.13.1",
+    "gatsby-plugin-manifest": "^5.13.0",
+    "gatsby-plugin-sitemap": "^6.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
