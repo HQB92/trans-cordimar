@@ -1,0 +1,122 @@
+{
+  "Header": {
+    "title": "Trans-CordiMar",
+    "paragraph": "Empresa de transporte de pasajeros chillneja para traslados de personal, turismo y eventos."
+  },
+  "About": {
+    "paragraph": "Desde Chillán, nos comprometemos a brindar servicios excepcionales que capturen la diversidad de Chile, desde los majestuosos paisajes del norte hasta los encantos del sur. Con una perspectiva nacional, te invitamos a descubrir la autenticidad y la riqueza cultural de cada rincón del país, viviendo momentos inolvidables. Viaja con nosotros y explora la vasta maravilla que Chile tiene para ofrecer.",
+    "Why": [
+      "Experinecia y Trayectoria",
+      "Servcio Personalizado",
+      "Confort y Seguridad",
+      "Puntualidad"
+    ],
+    "Why2": [
+      "Profecionales Calificados",
+      "Convenios y Descuentos ",
+      "Inovacion y Adaptabilidad",
+      "Respaldo de Clientes"
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/01-large.jpg",
+      "smallImage": "img/portfolio/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/02-large.jpg",
+      "smallImage": "img/portfolio/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/03-large.jpg",
+      "smallImage": "img/portfolio/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/04-large.jpg",
+      "smallImage": "img/portfolio/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/05-large.jpg",
+      "smallImage": "img/portfolio/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/06-large.jpg",
+      "smallImage": "img/portfolio/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/07-large.jpg",
+      "smallImage": "img/portfolio/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-eye",
+      "name": "Visión",
+      "text": "Nos esforzamos por ser la principal empresa de transporte turístico a nivel nacional y un referente internacional reconocido por la calidad y responsabilidad de nuestros servicios."
+    },
+    {
+      "icon": "fa fa-check-square",
+      "name": "Mision",
+      "text": "Nuestra misión consiste en garantizar el transporte seguro de nuestros pasajeros, ofreciendo servicios de alta calidad que van más allá de la mera actividad de transporte. Nos comprometemos a atender todas las necesidades y requerimientos de nuestros clientes, con un enfoque especial en su seguridad y bienestar."
+    },
+    {
+      "icon": "fa fa-slideshare",
+      "name": "Valores",
+      "text": "Como empresa, valoramos la integridad, el compromiso con la excelencia y la satisfacción del cliente, la innovación y la creatividad, el trabajo en equipo y la cooperación, la responsabilidad social y ambiental, la calidad constante, el aprendizaje continuo, y la adaptabilidad ágil a los cambios del mercado y las necesidades de nuestros clientes."
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Juan Quintana"
+    }
+  ],
+  "Team": [
+    {
+      "img": "img/team/01.jpg",
+      "name": "Mauricio Riquelme",
+      "job": "Fundador y Gerente General"
+    }
+  ],
+  "Contact": {
+    "address": "Victor Bianchi 40, dpto 202, bulnes",
+    "phone": "+56 9 3884 1700",
+    "email": "info@company.com",
+    "instagram": "https://www.instagram.com/transcordimar?igsh=NGxudjJrYWtjbTdz&utm_source=qr"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Contactarnos",
+      "text": "Puede contactarnos para obtener información sobre nuestros servicios, resolver problemas o dudas, brindar feedback y sugerencias, explorar colaboraciones comerciales, solicitar cotizaciones o pedidos, y recibir soporte técnico."
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Recomendarnos",
+      "text": "Recomendamos nuestra empresa por nuestra excelencia en el servicio al cliente, capacidad innovadora, integridad empresarial, talentoso equipo humano, responsabilidad social y ambiental, así como nuestra experiencia y reputación en el sector. Confíe en nosotros para satisfacer sus necesidades y brindarle una experiencia excepcional."
+    },
+    {
+      "icon": "fa fa-group",
+      "title": "Viajes Grupales",
+      "text": "Descubre la emoción de viajar en grupo con nosotros. Unimos personas para vivir aventuras inolvidables, fortalecer lazos y crear recuerdos memorables. Nos encargamos de todos los detalles para que disfrutes al máximo sin preocupaciones. ¡Únete a nuestra próxima aventura grupal y vive momentos inolvidables!"
+    }
+  ]
+}
