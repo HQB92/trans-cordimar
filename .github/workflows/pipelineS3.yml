@@ -1,23 +1,31 @@
-name: website trans-cordimar
+name: website trans-cordimar p
 
 on:
-  push:
-    branches:
-        - main
+    push:
+        branches:
+            - main
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: and-cru/actions-s3-static-upload@v12
-      with:
-        milliseconds: 500
-        s3-bucket-name: ${{ secrets.AWS_S3_BUCKET }}
-        folder: build
-      env:
-        NODE_ENV: development # optional: defaults to production
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: "us-east-2"
-        SOURCE_DIR: bundle # optional: defaults to public
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build
+              run: npm run build
+
+            - name: Deploy
+              uses: jakejarvis/s3-sync-action@master
+              with:
+                  args: --acl public-read --follow-symlinks --delete
+              env:
+                AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+                AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+                AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+                AWS_REGION: "us-east-2"
+                SOURCE_DIR: "build"
