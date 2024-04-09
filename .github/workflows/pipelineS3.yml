@@ -22,10 +22,10 @@ jobs:
             - name: Deploy
               uses: jakejarvis/s3-sync-action@master
               with:
-                  args: --delete --exclude '.git/*' --exclude '.github/*' --exclude 'node_modules/*' --exclude 'README.md' --exclude 'LICENSE' --exclude '.gitignore' --exclude '.gitattributes' --exclude '.vscode/*' --exclude '.DS_Store' --exclude '.editorconfig' --exclude '.eslintignore' --exclude '.eslintrc.js' --exclude '.prettierrc.js' --exclude 'package-lock.json' --exclude 'package.json' --exclude 'webpack.config.js' --exclude 'yarn.lock' --exclude 'yarn-error.log' --exclude 'yarn-debug.log' --exclude 'yarn-*.log' --exclude 'yarn.*' --exclude 'yarnrc' --exclude 'yarn-integrity' --exclude 'yarn-metadata.json' --exclude 'yarn-build-state.yml' --exclude 'yarn-releases/*' --exclude 'yarn-global/*' --exclude 'yarn-cache/*' --exclude 'yarn-nm/*' --exclude 'yarn-v1/*' --exclude 'yarn-v2/*' --exclude 'yarn-error.log' --exclude 'yarn-debug.log' --exclude 'yarn-*.log' --exclude 'yarn.*' --exclude 'yarnrc' --exclude 'yarn-integrity' --exclude 'yarn-metadata.json' --exclude 'yarn-build-state.yml' --exclude 'yarn-releases/*' --exclude 'yarn-global/*' --exclude 'yarn-cache/*' --exclude 'yarn-nm/*' --exclude 'yarn-v1/*' --exclude 'yarn-v2/*' --exclude 'yarn-error.log' --exclude 'yarn-debug.log' --exclude 'yarn-*.log' --exclude 'yarn.*' --exclude 'yarnrc' --exclude 'yarn-integrity' --exclude 'yarn-metadata.json' --exclude 'yarn-build-state.yml' --exclude 'yarn-re
+                  args: --acl public-read --follow-symlinks --delete
               env:
                 AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
                 AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
                 AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-                AWS_REGION: "us-east-1"
+                AWS_REGION: "us-east-2"
                 SOURCE_DIR: "website"
