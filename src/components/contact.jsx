@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
-import React from 'react';
 
 const initialState = {
   name: '',
@@ -16,10 +15,8 @@ export const Contact = (props) => {
   };
   const clearState = () => setState({ ...initialState });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-
     emailjs
       .sendForm(
         'service_5uyb9ht',
@@ -29,11 +26,11 @@ export const Contact = (props) => {
       )
       .then(
         (result) => {
-          console.log(result.text);
           clearState();
+          alert('Correo Enviado Exitosamente');
         },
         (error) => {
-          console.log(error.text);
+          alert('Error al enviar el correo');
         }
       );
   };
