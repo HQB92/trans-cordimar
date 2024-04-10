@@ -14,7 +14,7 @@ export const Contact = (props) => {
     setState((prevState) => ({ ...prevState, [name]: value }));
   };
   const clearState = () => setState({ ...initialState });
-
+  //
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(name, email, message);
