@@ -17,6 +17,7 @@ export const Contact = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(name, email, message);
     emailjs
       .sendForm(
         'service_5uyb9ht',
