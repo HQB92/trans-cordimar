@@ -217,11 +217,12 @@ a:focus,
 }
 .intro .overlay {
   background: rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 .intro h1 {
   font-family: "Raleway", sans-serif;
   color: #fff;
-  font-size: 82px;
+  font-size: 79px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
@@ -233,7 +234,7 @@ a:focus,
 }
 .intro p {
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
@@ -243,6 +244,9 @@ header .intro-text {
   padding-top: 350px;
   padding-bottom: 200px;
   text-align: center;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 }
 /* Features Section */
 #features {
